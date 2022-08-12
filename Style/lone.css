@@ -43,9 +43,7 @@
         text-decoration: none;
         color: aliceblue;
     }
-    .nav-link:visited{
-        text-decoration: none;
-    }
+
     /* Animation in JS?????
     .nav-link:hover{
 
@@ -71,7 +69,7 @@
     section p, section h3{
         padding: 2%;
     }
-    section h3{
+    .secHead{
         font-size: 2em;
     }
     #introJ{
@@ -85,25 +83,34 @@
     .bio-right{
         flex: 50%;
         background-color: #5c0ac7;
-        background-image: linear-gradient(to right, #695280, #5c0ac7);
-
     }
     .bio-left{
         flex: 50%;
-        background-color: #695280 ;
+        background-image: linear-gradient(to right, #695280, #5c0ac7);
     }
     #goalsJ{
         background-color: #ede979;
     }
     #professionalJ{
-        background-color: #50ad78;
+        overflow: hidden;
     }
     .proWrap{
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        padding: 5%;
+        flex-flow: row;
+        border-radius: 25px;
+        background-color: #50ad78;
+    }
+    .pro-left{
+        flex:50%;
+
+    }
+    .pro-right{
+        flex:50%;
+        background-image: linear-gradient(to left, #50ad78, #4CBB17);
+    }
+    .resume{
+        text-align: center;
+        padding: 2%;
     }
     
     /* Items */
@@ -114,30 +121,50 @@
     #res-link{
         text-decoration: none;
         color: grey;
-
     }
     #res-link:visited{
         text-decoration: none;
         color: grey;
     }
-
-    /* Images */
-    #facepalm{
-        margin: 0 auto;
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        padding: 0 2%;
+    .res-bull{
+        list-style-position: inside;
     }
-    #splash-intro{
+    .resume h1{
+       font-size: 2em;
+    }
+    /* Images */
+    #trumpet-pic{
         height: 100vh;
         width: 100vw;
         max-width:100vw;
     }
-    #trumpet-pic{
-        overflow-x: hidden;
+    .splash-intro{
+        position: relative;
+        overflow: hidden;
     }
-    
+    #intro-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: black;
+        color: white;
+        padding: 2.5% 8%;
+        font-size: 2.5em;
+    }
+    .typedText{
+        display: inline-block;
+    }
+    #tommyXlone{
+        max-width: 100%;
+        width:100%;
+        height: 100%;
+    }
+    #lone-pro{
+        max-width: 100%;
+        width:100%;
+        height: 100%;
+    }
 
     /*Media query */
     @media screen and ( max-width: 480px){
@@ -147,5 +174,9 @@
         }
         .bio-right{
             background-image: linear-gradient(to bottom, #695280, #5c0ac7);
+        }
+        .proWrap{
+            display: flex;
+            flex-direction: column;
         }
     }

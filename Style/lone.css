@@ -2,27 +2,25 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /* Structure */
 
-    body{
-        background-image: linear-gradient(to bottom, black, 
-        #1e1f21,#393a40, 
-        black );
-    }
     .main{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        background-color: #252422;
     }
-
+    body{
+        font-family: 'Raleway', sans-serif;
+    }
     /* Nav */
     header{
         top: 0;
         right: 0;
-        background-color: black;
+        background-color: #06070e;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -42,6 +40,7 @@
         font-size: 1.3em;
         text-decoration: none;
         color: aliceblue;
+        scroll-behavior: smooth;
     }
 
     /* Animation in JS?????
@@ -50,8 +49,8 @@
     }
     */
     footer{
-        background-color: black;
-        color: azure;
+        background-color: #06070e;
+        color: white;
         text-align: center;
         bottom: 0;
         left: 0;
@@ -86,27 +85,20 @@
     }
     .bio-left{
         flex: 50%;
-        background-image: linear-gradient(to right, #695280, #5c0ac7);
+        background-color: black;
+        color: white;
+        /* background-image: linear-gradient(to right, #695280, #5c0ac7); */
     }
     #goalsJ{
-        background-color: #ede979;
+        background-color: black;
     }
     #professionalJ{
         overflow: hidden;
     }
     .proWrap{
-        display: flex;
-        flex-flow: row;
         border-radius: 25px;
-        background-color: #50ad78;
-    }
-    .pro-left{
-        flex:50%;
-
-    }
-    .pro-right{
-        flex:50%;
-        background-image: linear-gradient(to left, #50ad78, #4CBB17);
+        background-color: black;
+        color: white;
     }
     .resume{
         text-align: center;
@@ -141,6 +133,7 @@
     .splash-intro{
         position: relative;
         overflow: hidden;
+        background-color: #252422;
     }
     #intro-text{
         position: absolute;
@@ -164,6 +157,10 @@
         max-width: 100%;
         width:100%;
         height: 100%;
+    }
+    .techLogos{
+        display: inline-block;
+        width: 12em;
     }
 
     /*Media query */

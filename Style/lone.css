@@ -81,7 +81,7 @@
     }
     .bio-right{
         flex: 50%;
-        background-color: #5c0ac7;
+        background-color: black;
     }
     .bio-left{
         flex: 50%;
@@ -168,12 +168,5 @@
         .intro-container{
             display: flex;
             flex-direction: column ;
-        }
-        .bio-right{
-            background-image: linear-gradient(to bottom, #695280, #5c0ac7);
-        }
-        .proWrap{
-            display: flex;
-            flex-direction: column;
         }
     }

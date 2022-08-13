@@ -31,26 +31,27 @@ resumeLink.addEventListener("mouseover", (e)=>{resumeLink.style.cursor = "pointe
 const bulletLinks = document.querySelectorAll(".res-bull li a");
 const bulletLinksVisited = document.querySelectorAll(".res-bull li a:visited");
 
+if(screen.width > 480){
+    bulletLinks.forEach((link)=>{
 
- bulletLinks.forEach((link)=>{
-
-    link.addEventListener("mouseover",(e)=>{
-        link.style.fontSize = "1.5em"
-        link.style.color ="#FFBF00";
-        link.style.textDecoration = "underline";
-    })
-    link.addEventListener("mouseout",(e)=>{
-        link.style.fontSize = "1em";
-        link.style.textDecoration = "none";
+        link.addEventListener("mouseover",(e)=>{
+            link.style.fontSize = "1.5em"
+            link.style.color ="#FFBF00";
+            link.style.textDecoration = "underline";
+        })
+        link.addEventListener("mouseout",(e)=>{
+            link.style.fontSize = "1em";
+            link.style.textDecoration = "none";
+            link.style.color ="white";
+        })
+        link.style.textDecoration ="none";
         link.style.color ="white";
-    })
-    link.style.textDecoration ="none";
-    link.style.color ="white";
-});
+    });
 
-bulletLinksVisited.forEach((link)=>{  
-    link.style.textDecoration = "none";
-})
+    bulletLinksVisited.forEach((link)=>{  
+        link.style.textDecoration = "none";
+    });
+}
 
 
 

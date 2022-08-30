@@ -65,11 +65,13 @@
         font-size: 1.25em;
         border-radius: 25px;
     }
-    section p, section h3{
+    .bio-text, section h3{
         padding: 2%;
     }
     .secHead{
         font-size: 2em;
+        color: white;
+        text-decoration: underline #FFBF00;
     }
     #introJ{
         overflow: hidden;
@@ -106,7 +108,13 @@
     }
     
     /* Items */
-    
+    #toTop{
+        border-radius: 25px;
+        background-image:white ;
+        color: black;
+        height: 3.5%;
+        width: 5.5%;
+    }
     .startEmojis{
         font-size: 2em;
     }
@@ -162,7 +170,52 @@
         display: inline-block;
         width: 12em;
     }
-
+    .resume h3{
+        padding: 0 0 .6% 0;
+    }
+    #res-line{
+        border: 2px solid #FFBF00;
+    }
+    .res-sec{
+        text-decoration: underline #FFBF00;
+        padding-bottom: 1%;
+    }
+    .goalItem{
+        color: white;
+        padding: 1.2em .8em;
+        break-inside: avoid;
+        text-decoration: underline #FFBF00;
+        background-color: #252422;
+        margin-bottom: 3%;
+    }
+    .goalCols{
+        columns: 3 2.5em;
+        padding: 1.2em;
+    }
+    
+    /*Animations Css*/
+    .slideinAnimate{
+        animation: slidein 1.2s;
+    }
+    .slideinAnimateR{
+        animation: slideinR 1.2s;
+    }
+    @keyframes slidein {
+        from {
+            margin-left: 150%;
+          }
+          to {
+            margin-left: 0%;
+          }
+    }
+    @keyframes slideinR {
+        from {
+            margin-right: 150%;
+          }
+          to {
+            margin-right: 0%;
+          }
+    }
     /*Media query */
     @media screen and ( max-width: 480px){
         .intro-container{

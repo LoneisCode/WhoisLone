@@ -27,7 +27,7 @@
             <div id="fakelogo"><h2 id="logo">LONE</h2></div>
         </header>
         <div class="splash-intro">
-            <img id="trumpet-pic"src="./Images/pexels-miguel-lozano-11948805.jpg" alt="Bronze Statue of Louis Prima">
+            <img id="trumpet-pic" title="Click to see photographer of pic" src="./Images/pexels-miguel-lozano-11948805.jpg" alt="Bronze Statue of Louis Prima">
             <!--Photo by Miguel Lozano: https://www.pexels.com/photo/bronze-statue-of-louis-prima-11948805/-->
             <div id="intro-text"><span class ="typedText"></span></div>
         </div>
@@ -68,10 +68,10 @@
                         <h3 class="secHead">Pure Business</h3>
                         <div class="resume">
                             <h1>Kniledge "Lone" Johns</h1>
-                            <hr>
+                            <hr id="res-line">
                             <br>
                             <!--Socials-->
-                            <h2>Socials</h2>
+                            <h2 class="res-sec">Socials</h2>
     
                             <ul class="res-bull">
                                 <li><a href="mailto:kjislone@gmail.com?subject=Contact%20From%20WhoisLone" target="_blank" rel="noopener noreferrer">Email Me!</a></li>
@@ -80,11 +80,11 @@
                             </ul>
                             <br>
                             <!--Edu-->
-                            <h2>Education</h2>
+                            <h2 class="res-sec">Education</h2>
                             
-                                <h3>B.S. | Stephen F. Austin State University | December 2022 | Major in Computer Science | Minor in Information
+                                <h3 >B.S. | Stephen F. Austin State University | December 2022 | Major in Computer Science | Minor in Information
                                  Technology | 3.5 / 4.0 GPA |</h3>
-                                <h3>
+                                <h3 >
                                 Diploma & AA | Arlington Collegiate Highschool at Tarrant County Community College SE | Class of 2020 |
                                     3.7/4.0 GPA |
                                 </h3>
@@ -92,8 +92,8 @@
                             
                             <!--Skills-->
                             <br>
-                            <h2>Skills</h2>
-                            <p>HTML, CSS, JavaScript, React, NodeJS, Java, REST APIs, Git, MongoDB, SQL.</p>
+                            <h2 class="res-sec">Skills</h2>
+                            <p id="skill-list">HTML, CSS, JavaScript, React, NodeJS, Java, REST APIs, Git, MongoDB, SQL.</p>
                             <!--Provided by https://codepen.io/aidandunn/pen/QWqRya -->
                             <div class="techLogos">
                                 <svg viewBox="0 0 452 520">
@@ -125,7 +125,9 @@
                             <img src="./Images/nodejs-seeklogo.com.svg" alt="Node logo">
                             <img src="./Images/react-seeklogo.com.svg" alt="React logo">
                             <!--Exp-->
-                            <h2>Experience</h2>
+                            <br>
+                            <br>
+                            <h2 class="res-sec">Experience</h2>
                         
                                 <h3>Stephen F. Austin State University | October 2021 - Present | Nacogdoches, TX |
                                 Student Technician</h3>
@@ -137,6 +139,7 @@
                                         and screened individuals through the procedure.
                                     </li>
                                 </ul>
+                                <br>
                                 <h3>IBM | June 2022 - August 2022 | Remote |
                                     IBM Accelerate Participant - Software Track
                                 </h3>
@@ -153,7 +156,7 @@
                             
                             <!--Projects-->
                             <br>
-                            <h2>Projects</h2>
+                            <h2 class="res-sec">Projects</h2>
                             
                                 <h3>OSED | School Project | ASP.NET, Bootstrap, SQL, Git</h3>
                                 <ul class="res-bull">
@@ -164,7 +167,7 @@
                            
                             <!--Certs-->
                                 <br>
-                                <h2>Certifications</h2>
+                                <h2 class="res-sec">Certifications</h2>
                             
                                 <ul class="res-bull">
                                     <li><a href="https://www.credly.com/badges/0c622a2e-1aec-4016-b42a-178b041262f1?source=linked_in_profile" target="_blank" rel="noopener noreferrer">Working in a Digital World: Professional Skills | IBM | June 2022</a></li>
@@ -173,21 +176,42 @@
                                 </ul>
                            
                                 <br>
-                                <h2>Leadership</h2>
+                                <h2 class="res-sec">Leadership</h2>
                                 <ul class="res-bull"><li>SFA Rugby Club | Assistant Coach | Teaching rugby skills and mentoring players through development.</li></ul>
+                                <ul class="res-bull"><li>SFA | Chair of the Department of Computer Science Student Advisory Board | Provides input and advice
+                                    on decisions and initiatives impacting the department's short and long-term goals.</li></ul>
                                 <br>
                                 <a id="res-link">
                                     Click here to download my resume!
                                 </a>
 
                         </div>
-                            
-                    
+                        
                 </div>
             </section>
             
             <section id="goalsJ">
-                <h3 class="secHead">Goals</h3> 
+                <h3 class="secHead">Goals</h3>
+                <div class="goalCols">
+                    <div class="goalItem">
+                        <span>Travel the world!</span>
+                    </div>
+                    <div class="goalItem">
+                        <span>Work with a company that creates a impact in society!</span>
+                    </div>
+                    <div class="goalItem">
+                        <span>Use my skillset for good!</span>
+                    </div>
+                    <div class="goalItem">
+                        <span>Provide for my family!</span>
+                    </div>
+                    <div class="goalItem">
+                        <span>Have a balanced life!</span>
+                    </div>
+                    <div class="goalItem">
+                        <span>Promote youth/community learning!</span>
+                    </div>
+                </div>
             </section>
         </div>
 
@@ -198,17 +222,7 @@
                 I want to put my knowledge to use instead of saying: "Yea I have it..." . &#128282
             </p>
         </footer>
-
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script>
-            let typed = new Typed(".typedText",{
-                strings: ["LONE'S BLOG"], 
-                typeSpeed: 130,
-                loop: true,
-                showCursor: true,
-                cursorChar: '|',
-                autoInsertCss: true
-            });
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

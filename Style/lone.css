@@ -182,15 +182,20 @@
     }
     .goalItem{
         color: white;
-        padding: 1.2em .8em;
-        break-inside: avoid;
+        flex-basis: content;
+        white-space: nowrap;
+        padding: 2%;
         text-decoration: underline #FFBF00;
         background-color: #252422;
-        margin-bottom: 3%;
+        scroll-snap-align: start;
     }
     .goalCols{
-        columns: 3 2.5em;
-        padding: 1.2em;
+        display: flex;
+        overflow-x: auto;
+        gap: 2em;
+        max-width: 100%;
+        scroll-snap-type: x mandatory;
+        margin: 0 2em 0 2em;
     }
     
     /*Animations Css*/
